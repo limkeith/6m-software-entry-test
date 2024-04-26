@@ -13,8 +13,21 @@
 
 function swap(x, y){
     // Task 1: Add code here
+    // Check if both x and y are numbers
+    if (typeof x !== "number" || typeof y != "number"){
+        console.log (-1);
+        return -1;
+    }
+    // Swap the values using destructuring assignment
+    [x, y] = [y, x];
+    
+    // Print the swapped values
+    console.log(`Swapped values: x = ${x}, y = ${y}`);
 }
 
 // Task 2: Add code here
+swap("Apple", 10);
+swap(9,17);
 
-module.exports = swap;
+//Create a utility module that includes a swap function:
+module.exports = {swap};
