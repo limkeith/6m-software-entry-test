@@ -10,15 +10,21 @@
 */
 
 
-// Task 1: Add code here
+// Task 1: Declare an array to store patient's names
+let patients = [];
 
+    // Task 2: Add the patient's name to the array
 function addPatient(patientName){
-    // Task 2: Add code here
+    patients.push(patientName);
+
+}   
+
+// Task 3: Implement the listPatient() function
+function listPatient(){
+    console.log(patients);
 }
-
-// Task 3: Add code here
-
-
+    
+// Adding patients
 addPatient("John");
 addPatient("Mary");
 addPatient("Mark");
